@@ -2,11 +2,39 @@
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: 1440px;
   margin: 0 auto;
+  background-color: rgba(78, 77, 77, 0.794);
+}
+
+header {
+  display: flex;
+  /* flex-direction: row;   ---> default */
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  float: right;
+}
+
+nav li {
+  border: 3px saddlebrown solid;
+  padding: 1.2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
 }
