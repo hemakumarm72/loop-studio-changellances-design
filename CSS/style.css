@@ -71,15 +71,17 @@ nav a:hover {
 .Text {
   position: absolute;
   color: hsl(0, 0%, 100%);
-  top: 8em;
+  top: 5vmin;
+  top: 10vmax;
   padding: 1em;
-  padding-right: 3em;
+  padding-right: 2em;
   border: 2.8px rgb(255, 255, 255) solid;
 }
 
-.Text,
-H1 {
+.H1_text {
   font-style: normal;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.4em;
+
+  font-size: 1vmin;
+  font-size: 3vmax;
 }
