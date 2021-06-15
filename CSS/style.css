@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +11,13 @@
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 body {
   /* font-family: "Alata", sans-serif; */
   font-family: "Josefin Sans", sans-serif;
+  background-color: aqua;
 }
 
 .container {
@@ -22,6 +28,10 @@ body {
 }
 
 header {
+  z-index: 100000;
+  position: relative;
+  top: 3em;
+
   display: flex;
   /* flex-direction: row;   ---> default */
   justify-content: space-between;
@@ -34,11 +44,42 @@ nav ul {
 }
 
 nav li {
-  border: 3px saddlebrown solid;
-  padding: 1.2em;
+  padding: 1em;
 }
 
 nav a {
+  padding: 0 0.8em 0 0.8em;
   text-decoration: none;
   color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+nav a:hover {
+  color: rgb(96, 255, 5);
+}
+
+.banner_img {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  width: 100%;
+  display: flex;
+}
+
+.Text {
+  position: absolute;
+  color: hsl(0, 0%, 100%);
+  top: 8em;
+  padding: 1em;
+  padding-right: 3em;
+  border: 2.8px rgb(255, 255, 255) solid;
+}
+
+.Text,
+H1 {
+  font-style: normal;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4em;
 }
