@@ -32,6 +32,9 @@ The designs were created to the following widths:
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weight: 300
 
+-font-family: 'Alata', sans-serif;
+-font-family: 'Josefin Sans', sans-serif;
+
 ## Icons
 
 We provide the required social icons. But, if you prefer, you can use a font icon library. Some suggestions can be found below:
