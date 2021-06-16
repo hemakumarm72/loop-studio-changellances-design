@@ -18,16 +18,12 @@ body {
 }
 
 .container {
-  width: 100%;
-
+  width: 95%;
+  max-width: 1443px;
   margin: 0 auto;
   background-color: rgb(42, 42, 42);
 }
 
-.subcontainer {
-}
-
-.banner-img,
 .image {
   position: relative;
   background-repeat: no-repeat;
@@ -38,12 +34,18 @@ body {
   max-height: 100vh;
 }
 
+.subcontainer {
+  position: static;
+  background-color: tomato;
+  border: 3px yellow solid;
+}
 header {
   top: 3em;
+  width: 90%;
 
   position: fixed;
   z-index: 1;
-  width: 100%;
+
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -52,10 +54,8 @@ header {
 }
 
 .navigation {
-  padding: 0 5em;
   position: relative;
-  width: 100%;
-
+  width: 90%;
   justify-content: space-between;
   display: flex;
   align-items: center;
