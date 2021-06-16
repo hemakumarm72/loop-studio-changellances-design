@@ -18,10 +18,13 @@ body {
 }
 
 .container {
-  width: 95%;
-  max-width: 1443px;
+  width: 100%;
+
   margin: 0 auto;
   background-color: rgb(42, 42, 42);
+}
+
+.subcontainer {
 }
 
 .banner-img,
@@ -49,9 +52,10 @@ header {
 }
 
 .navigation {
-  padding: 0 10em;
+  padding: 0 5em;
   position: relative;
   width: 100%;
+
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -61,13 +65,25 @@ header {
 
 nav ul {
   position: relative;
-  border: 3px yellow solid;
+
   list-style-type: none;
   display: flex;
+  float: right;
 }
 
 nav li {
-  position: relative;
-  border: 3px pink solid;
-  padding: 0 1.3vw;
+  padding: 0 1em;
+}
+
+nav a {
+  cursor: pointer;
+  padding: 0 0.8em 0 0.8em;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+nav a:hover {
+  color: rgb(96, 255, 5);
 }
