@@ -19,7 +19,7 @@ body {
 
 .container {
   width: 95%;
-  max-width: 1443px;
+  max-width: 1444px;
   margin: 0 auto;
   background-color: rgb(42, 42, 42);
 }
@@ -34,15 +34,11 @@ body {
   max-height: 100vh;
 }
 
-.subcontainer {
-  background-color: tomato;
-  border: 3px yellow solid;
-}
 header {
   top: 3em;
   width: 80%;
 
-  position: fixed;
+  position: absolute;
   z-index: 1;
 
   justify-content: space-between;
@@ -89,7 +85,7 @@ nav a:hover {
 }
 
 .Text {
-  margin: 20em 0 0 0;
+  margin: 40vw 0 0 0;
   border: 2px white solid;
   right: inherit;
   position: absolute;
@@ -99,7 +95,42 @@ nav a:hover {
 
 .Text,
 H1 {
-  font-size: 2vw;
+  font-size: 5vw;
   font-style: normal;
   font-family: "Josefin Sans", sans-serif;
+}
+
+/* MaiN container */
+.main-section {
+  padding: 10vw 0;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.viewsection {
+  background-color: violet;
+  position: relative;
+  display: flex;
+  font-size: 10px;
+  flex-direction: row;
+}
+
+.interaction-img {
+}
+
+.viewcontent {
+  margin: 20vh 0 0 0;
+  position: absolute;
+  background-color: white;
+  padding: 3vw 3vw 0 3vw;
+  right: 0;
+}
+
+.H1-paragraph {
+  font-size: 5vw;
+}
+.paragraph {
+  color: rgb(95, 93, 93);
+  font-size: 1vw;
 }
