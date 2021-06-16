@@ -102,35 +102,61 @@ H1 {
 
 /* MaiN container */
 .main-section {
-  padding: 10vw 0;
+  border: 3px yellow solid;
+  padding: 10vw 0 0 0;
 
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .viewsection {
-  background-color: violet;
   position: relative;
+  border: 3px red solid;
   display: flex;
-  font-size: 10px;
   flex-direction: row;
-}
+  max-height: 90%;
 
-.interaction-img {
+  background-color: violet;
+}
+.viewinteraction img {
+  border: 3px maroon solid;
+  position: relative;
+  background-repeat: no-repeat;
+
+  max-width: 100%;
+  min-width: 90%;
 }
 
 .viewcontent {
-  margin: 20vh 0 0 0;
+  right: 0;
+
+  bottom: 0;
+  padding: 6vw 1vw 0 4vw;
+  margin: 1vw 20vw 0 0;
+  position: absolute;
+
+  background-color: white;
+}
+
+.viewpara {
+  padding-bottom: 1.2rem;
+  font-size: 4vw;
+}
+/* .viewcontent {
+  margin: 10% 0 0 0;
   position: absolute;
   background-color: white;
-  padding: 3vw 3vw 0 3vw;
+  padding: 5vw;
+  padding-bottom: 0;
   right: 0;
+  width: auto;
 }
 
 .H1-paragraph {
   font-size: 5vw;
+  font-size: 4vmin;
+  padding-bottom: 1rem;
 }
 .paragraph {
   color: rgb(95, 93, 93);
   font-size: 1vw;
-}
+} */
