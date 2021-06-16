@@ -33,11 +33,41 @@ body {
   width: 100%;
   max-width: 100vw;
   max-height: 100vh;
-  left: 0;
-  top: 0;
-  right: 0;
 }
+
 header {
+  top: 3em;
+
   position: fixed;
   z-index: 1;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  border: 3px rgb(255, 0, 0) solid;
+}
+
+.navigation {
+  padding: 0 10em;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  border: 3px black solid;
+}
+
+nav ul {
+  position: relative;
+  border: 3px yellow solid;
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+  border: 3px pink solid;
+  padding: 0 1.3vw;
 }
