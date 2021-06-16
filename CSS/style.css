@@ -35,32 +35,31 @@ body {
 }
 
 .subcontainer {
-  position: static;
   background-color: tomato;
   border: 3px yellow solid;
 }
 header {
   top: 3em;
-  width: 90%;
+  width: 80%;
 
   position: fixed;
   z-index: 1;
 
   justify-content: space-between;
   display: flex;
+
   align-items: center;
   transition: 0.5s;
-  border: 3px rgb(255, 0, 0) solid;
 }
 
 .navigation {
   position: relative;
-  width: 90%;
+  width: 100%;
+
   justify-content: space-between;
   display: flex;
   align-items: center;
   transition: 0.5s;
-  border: 3px black solid;
 }
 
 nav ul {
@@ -72,7 +71,8 @@ nav ul {
 }
 
 nav li {
-  padding: 0 1em;
+  padding: 0 0.5vw;
+  max-width: 7vw;
 }
 
 nav a {
@@ -86,4 +86,20 @@ nav a {
 
 nav a:hover {
   color: rgb(96, 255, 5);
+}
+
+.Text {
+  margin: 20em 0 0 0;
+  border: 2px white solid;
+  right: inherit;
+  position: absolute;
+  color: white;
+  padding: 1em;
+}
+
+.Text,
+H1 {
+  font-size: 2vw;
+  font-style: normal;
+  font-family: "Josefin Sans", sans-serif;
 }
