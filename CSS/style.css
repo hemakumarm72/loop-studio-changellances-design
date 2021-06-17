@@ -18,14 +18,12 @@ html {
 body {
   /* font-family: "Alata", sans-serif; */
   font-family: "Josefin Sans", sans-serif;
-  background-color: aqua;
 }
 
 .container {
   width: 95%;
   max-width: 1444px;
   margin: 0 auto;
-  background-color: rgb(42, 42, 42);
 }
 
 .image {
@@ -107,7 +105,6 @@ nav a:hover {
 
 /* MaiN container */
 .main-section {
-  border: 3px yellow solid;
   padding: 10vw 0 10vw 0;
 
   justify-content: space-between;
@@ -115,15 +112,12 @@ nav a:hover {
 
 .viewsection {
   position: relative;
-  border: 3px red solid;
+
   display: flex;
   flex-direction: row;
   max-height: 90%;
-
-  background-color: violet;
 }
 .viewinteraction img {
-  border: 3px maroon solid;
   position: relative;
   background-repeat: no-repeat;
 
@@ -152,22 +146,20 @@ nav a:hover {
 
 .viewbroad {
   position: relative;
-  border: 3px green solid;
 }
 
 .viewtop {
-  margin: 0 26px;
-  border: 3px royalblue solid;
+  /* margin: 0 26px; */
+
   position: relative;
   display: flex;
-  padding-bottom: 5rem;
+  padding: 2rem 0;
   font-size: 1vmin;
   font-size: 2vmax;
   justify-content: space-between;
 }
 
 .viewpanel {
-  border: 3px mediumblue solid;
 }
 
 .view-btn {
@@ -195,19 +187,77 @@ nav a:hover {
 
 /* view panel */
 .viewpanel {
-  position: relative;
   border: 3px white solid;
-
-  display: inline-block;
 }
 
-.column-image {
-  border: 3px yellow solid;
-}
-.viewimage {
-  border: 3px green solid;
-  width: 21%;
-  padding: 10px;
+.cards {
+  margin: 0 auto;
+  max-width: 1443px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17vw, 8fr));
+  grid-auto-rows: auto;
+  gap: 20px;
 
-  padding-left: 2.1vmax;
+  padding-top: 30px;
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card1 h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.4vw;
+  font-weight: 100;
+  color: white;
+  margin: -30% 5vw;
+}
+.card-text {
+  color: white;
+}
+
+footer {
+  padding: 3vw 0;
+  background-color: rgb(0, 0, 0);
+}
+
+.lastfooter {
+  max-width: 1443px;
+  margin: 0 auto;
+  width: 95%;
+
+  height: 15vw;
+  position: relative;
+}
+
+.footerlogo {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.facebook,
+.twitter,
+.pinterest,
+.instagram {
+  padding: 0 5px;
+}
+
+.footer-link {
+  margin: 20px 0 0 0;
+  bottom: 0;
+
+  top: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.linkhighlight {
+  margin-left: -10px;
+}
+
+.copyright {
+  font-size: 1vw;
 }
