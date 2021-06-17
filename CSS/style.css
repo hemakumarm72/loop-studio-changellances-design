@@ -1,3 +1,7 @@
+html {
+  font-size: 15px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,16 +89,17 @@ nav a:hover {
 }
 
 .Text {
-  margin: 40vw 0 0 0;
+  margin: 40vw 1vw 0 0;
   border: 2px white solid;
   right: inherit;
   position: absolute;
   color: white;
-  padding: 1em;
+  padding: 2vw 4vmax;
+  padding-top: 3vw;
 }
 
 .Text,
-H1 {
+.inner-text {
   font-size: 5vw;
   font-style: normal;
   font-family: "Josefin Sans", sans-serif;
@@ -103,7 +108,7 @@ H1 {
 /* MaiN container */
 .main-section {
   border: 3px yellow solid;
-  padding: 10vw 0 0 0;
+  padding: 10vw 0 10vw 0;
 
   justify-content: space-between;
 }
@@ -130,7 +135,7 @@ H1 {
   right: 0;
 
   bottom: 0;
-  padding: 6vw 1vw 0 4vw;
+  padding: 8vw 4vw 0 4vw;
   margin: 1vw 20vw 0 0;
   position: absolute;
 
@@ -143,4 +148,66 @@ H1 {
 }
 .viewparagraph {
   color: 127, 127, 127;
+}
+
+.viewbroad {
+  position: relative;
+  border: 3px green solid;
+}
+
+.viewtop {
+  margin: 0 26px;
+  border: 3px royalblue solid;
+  position: relative;
+  display: flex;
+  padding-bottom: 5rem;
+  font-size: 1vmin;
+  font-size: 2vmax;
+  justify-content: space-between;
+}
+
+.viewpanel {
+  border: 3px mediumblue solid;
+}
+
+.view-btn {
+  /* margin-right: 25px; */
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  border: 2px black;
+  color: rgb(42, 42, 42);
+  font-weight: 400;
+  padding: 12px 36px;
+  text-align: center;
+  font-size: 1vw;
+  transition: 0.3s;
+}
+
+.view-btn:hover {
+  background-color: rgb(42, 42, 42);
+  color: white;
+  border: 2px hsl(0, 0%, 100%) solid;
+}
+
+.btn-inner {
+  letter-spacing: 5px;
+}
+
+/* view panel */
+.viewpanel {
+  position: relative;
+  border: 3px white solid;
+
+  display: inline-block;
+}
+
+.column-image {
+  border: 3px yellow solid;
+}
+.viewimage {
+  border: 3px green solid;
+  width: 21%;
+  padding: 10px;
+
+  padding-left: 2.1vmax;
 }
